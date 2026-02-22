@@ -38,6 +38,7 @@ const Contact = ({ hasAnimated }) => {
             {/* First button */}
             <a
               href={contactLinksWithIcons[0].href}
+              target="_blank"
               className={`flex items-center justify-center w-full sm:w-auto px-6 py-3 rounded-lg font-medium transition-all duration-300
                 bg-black text-white shadow-md hover:shadow-lg hover:bg-gray-800
                 dark:bg-white dark:text-black dark:hover:bg-gray-200 dark:hover:text-black
@@ -51,6 +52,7 @@ const Contact = ({ hasAnimated }) => {
             <div className="flex gap-4 sm:gap-8">
               <a
                 href={contactLinksWithIcons[1].href}
+                target="_blank"
                 className={`flex items-center justify-center flex-1 sm:flex-none px-6 py-3 rounded-lg font-medium transition-all duration-300
                   border-2 border-black text-black hover:bg-black hover:text-white
                   dark:border-white dark:text-white dark:hover:bg-white dark:hover:text-black
@@ -62,6 +64,7 @@ const Contact = ({ hasAnimated }) => {
 
               <a
                 href={contactLinksWithIcons[2].href}
+                target="_blank"
                 className={`flex items-center justify-center flex-1 sm:flex-none px-6 py-3 rounded-lg font-medium transition-all duration-300
                   border-2 border-black text-black hover:bg-black hover:text-white
                   dark:border-white dark:text-white dark:hover:bg-white dark:hover:text-black
