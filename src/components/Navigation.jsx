@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Sun, Moon } from "lucide-react";
 
-const Navigation = () => {
+const Navigation = ({ darkMode, setDarkMode }) => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
 
@@ -23,7 +23,7 @@ const Navigation = () => {
         behavior: "smooth",
       });
     }
-    closeMobileMenu(); // Close mobile menu after clicking
+    closeMobileMenu();
   };
 
   useEffect(() => {
@@ -44,24 +44,29 @@ const Navigation = () => {
 
   return (
     <nav
-      className={`fixed top-0 w-full z-50 transition-all duration-300 ${isScrolled ? "bg-white/95 backdrop-blur-md shadow-sm" : "bg-transparent"}`}
+      className={`fixed top-0 w-full z-50 transition-all duration-300 ${
+        isScrolled
+          ? "bg-white/95 dark:bg-gray-900/95 backdrop-blur-md shadow-sm"
+          : "bg-transparent"
+      }`}
     >
       <div className="max-w-6xl mx-auto px-6 py-4">
         <div className="flex justify-between items-center">
+          {/* Logo */}
           <div
-            className={`text-xl font-bold transition-colors cursor-pointer hover:opacity-80 ${isScrolled ? "text-black" : "text-black"}`}
+            className="text-xl font-bold cursor-pointer"
             onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
           >
             Portfolio
           </div>
 
           {/* Desktop Menu */}
-          <div className="hidden md:flex space-x-8">
+          <div className="hidden md:flex items-center space-x-8">
             {navItems.map((item) => (
               <a
                 key={item.href}
                 href={item.href}
-                className={`transition-colors ${isScrolled ? "text-gray-600 hover:text-black" : "text-gray-700 hover:text-black"}`}
+                className="text-gray-700 dark:text-gray-300 hover:text-black dark:hover:text-white transition-colors"
                 onClick={(e) => {
                   e.preventDefault();
                   scrollToSection(item.href);
@@ -70,13 +75,22 @@ const Navigation = () => {
                 {item.label}
               </a>
             ))}
+
+            {/* 🌙 THEME TOGGLE BUTTON */}
+            <button
+              onClick={() => setDarkMode(!darkMode)}
+              className="p-2 rounded-lg bg-gray-200 dark:bg-gray-800 transition"
+            >
+              {darkMode ? (
+                <Sun className="w-5 h-5 text-yellow-400" />
+              ) : (
+                <Moon className="w-5 h-5 text-gray-700" />
+              )}
+            </button>
           </div>
 
-          {/* Mobile Men Button */}
-          <button
-            onClick={toggleMobileMenu}
-            className={`md:hidden p-2 transition-colors cursor-pointer ${isScrolled ? "text-gray-600 hover:text-black" : "text-gray-700 hover:text-black"}`}
-          >
+          {/* Mobile Menu Button */}
+          <button onClick={toggleMobileMenu} className="md:hidden p-2">
             {isMobileMenuOpen ? (
               <X className="w-6 h-6" />
             ) : (
@@ -87,9 +101,13 @@ const Navigation = () => {
 
         {/* Mobile Menu */}
         <div
-          className={`md:hidden transition-all duration-300 ease-in-out ${isMobileMenuOpen ? "max-h-64 opacity-100 mt-4" : "max-h-0 opacity-0 overflow-hidden"}`}
+          className={`md:hidden transition-all duration-300 ${
+            isMobileMenuOpen
+              ? "max-h-64 opacity-100 mt-4"
+              : "max-h-0 opacity-0 overflow-hidden"
+          }`}
         >
-          <div className="bg-white border border-gray-100 rounded-lg shadow-lg p-4 space-y-4">
+          <div className="bg-white dark:bg-gray-900 border border-gray-100 dark:border-gray-800 rounded-lg shadow-lg p-4 space-y-4">
             {navItems.map((item) => (
               <a
                 key={item.href}
@@ -98,11 +116,19 @@ const Navigation = () => {
                   e.preventDefault();
                   scrollToSection(item.href);
                 }}
-                className="block text-gray-600 hover:text-black transition-colors py-2"
+                className="block text-gray-600 dark:text-gray-300 hover:text-black dark:hover:text-white py-2"
               >
                 {item.label}
               </a>
             ))}
+
+            {/* Toggle in mobile too */}
+            <button
+              onClick={() => setDarkMode(!darkMode)}
+              className="w-full p-2 rounded-lg bg-gray-200 dark:bg-gray-800"
+            >
+              Toggle Theme
+            </button>
           </div>
         </div>
       </div>
