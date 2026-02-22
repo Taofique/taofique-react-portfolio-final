@@ -3,12 +3,12 @@ export const heroData = {
   name: "Taofique Islam",
   roles: [
     "Frontend Developer",
-    "Full-Stack Developer",
+    "Full-Stack Engineer",
     "React Specialist",
     "Creative Coder",
   ],
   description:
-    "Crafting exceptional digital experiences with modern technologies. I specialize in building beautiful, functional, and user-friendly web applications that make a lasting impact.",
+    "Crafting exceptional digital experiences with modern technologies. I specialize in building beautiful, functional and user-friendly web applications that make a lasting impact.",
   stats: [
     { number: "1+", label: "Years Experience" },
     { number: "10+", label: "Projects Completed" },

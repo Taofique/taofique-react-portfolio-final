@@ -3,6 +3,8 @@ import Navigation from "./components/Navigation";
 import { useIntersectionObserver } from "./hooks/useIntersectionObserver";
 import { useScrollToTop } from "./hooks/useScrollToTop";
 import Hero from "./components/Hero";
+import About from "./components/About";
+import Projects from "./components/Projects";
 
 const App = () => {
   const hasAnimated = useIntersectionObserver();
@@ -12,6 +14,8 @@ const App = () => {
     <div className="min-h-screen bg-white text-black">
       <Navigation />
       <Hero hasAnimated={hasAnimated} />
+      <About hasAnimated={hasAnimated} />
+      <Projects hasAnimated={hasAnimated} />
     </div>
   );
 };
