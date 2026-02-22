@@ -48,8 +48,6 @@ const Hero = ({ hasAnimated }) => {
     document.getElementById("about").scrollIntoView({ behavior: "smooth" });
   };
 
-  console.log(heroData);
-
   return (
     <section className="relative h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-white via-gray-50 to-gray-100 pt-20">
       {/* Background Elements*/}
