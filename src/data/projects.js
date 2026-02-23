@@ -4,8 +4,8 @@ export const projects = [
     description:
       "A modern job discovery platform connecting talent with top companies. Features smart candidate pipelines, real-time job tracking, application progress monitoring, and comprehensive analytics on active jobs, success rates, and response times.",
     tech: ["React", "Node.js", "Express", "Tailwind CSS"],
-    github: "",
-    demo: "",
+    github: "https://github.com/Taofique/Hirely",
+    demo: "https://hirely-jet.vercel.app/",
     image: "/assets/hirely.JPG",
   },
   {
