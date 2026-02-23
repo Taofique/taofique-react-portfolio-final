@@ -6,7 +6,7 @@ export const projects = [
     tech: ["React", "Node.js", "Express", "Tailwind CSS"],
     github: "",
     demo: "",
-    image: "/src/assets/hirely.JPG",
+    image: "/public/assets/hirely.JPG",
   },
   {
     title: "Fast Pizza Co.",
@@ -15,7 +15,7 @@ export const projects = [
     tech: ["React", "Redux", "Tailwind CSS", "Vite"],
     github: "https://github.com/Taofique/fast-pizza",
     demo: "https://fast-pizza-gamma-sage.vercel.app",
-    image: "/src/assets/fastPizza.JPG",
+    image: "/public/assets/fastPizza.JPG",
   },
   {
     title: "PlantPal",
@@ -24,7 +24,7 @@ export const projects = [
     tech: ["React", "TypeScript", "Node.js", "Express", "Tailwind CSS", "JWT"],
     github: "https://github.com/Taofique/plantpal-frontend",
     demo: "https://plantpal-frontend.vercel.app",
-    image: "/src/assets/plantPal.JPG",
+    image: "/public/assets/plantPal.JPG",
   },
   {
     title: "Travel Guide",
@@ -33,7 +33,7 @@ export const projects = [
     tech: ["HTML", "CSS", "JavaScript"],
     github: "https://github.com/Taofique/Travel-Guide-Website",
     demo: "https://travel-guide-website-eta.vercel.app/",
-    image: "/src/assets/travelGuide.JPG",
+    image: "/public/assets/travelGuide.JPG",
   },
   {
     title: "Pixel Art",
@@ -42,7 +42,7 @@ export const projects = [
     tech: ["JavaScript", "CSS", "HTML"],
     github: "https://github.com/Taofique/Pixel-Art",
     demo: "https://pixel-art-q5d6.vercel.app/",
-    image: "/src/assets/pixel art.JPG",
+    image: "/public/assets/pixel art.JPG",
   },
   {
     title: "Lion's Bike Repair",
@@ -51,6 +51,6 @@ export const projects = [
     tech: ["React", "CSS", "Vite"],
     github: "https://github.com/Taofique/Lion-s-Bike-Repair",
     demo: "https://lion-s-bike-repair.vercel.app",
-    image: "src/assets/lions.JPG",
+    image: "/public/assets/lions.JPG",
   },
 ];
