@@ -1,12 +1,30 @@
 export const projects = [
   {
-    title: "Hirely",
+    title: "QuickHire",
     description:
-      "A modern job discovery platform connecting talent with top companies. Features smart candidate pipelines, real-time job tracking, application progress monitoring, and comprehensive analytics on active jobs, success rates, and response times.",
-    tech: ["React", "Node.js", "Express", "Tailwind CSS"],
-    github: "https://github.com/Taofique/Hirely",
-    demo: "https://hirely-jet.vercel.app/",
-    image: "/assets/hirely.JPG",
+      "A modern full-stack job board where companies can post listings and job seekers can discover opportunities and apply — all in one place. Features job browsing with filters, detailed job pages, an admin dashboard to post and delete listings, and application tracking per job.",
+    tech: [
+      "React",
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "Zustand",
+      "Tailwind CSS",
+      "Vite",
+    ],
+    github: "https://github.com/Taofique/quickhire",
+    demo: "https://quickhire-yqwq.onrender.com/",
+    image: "assets/Quickhire.JPG",
+  },
+
+  {
+    title: "Advanced Authentication MERN",
+    description:
+      "A full-stack authentication system built with the MERN stack. Features user registration and login with hashed passwords, two-factor authentication (2FA) via OTP, JWT-based session management, protected routes, and email-based password reset flow powered by Resend.",
+    tech: ["React", "Node.js", "Express", "MongoDB", "JWT", "Resend"],
+    github: "https://github.com/Taofique/Advanced-Authentication-MERN",
+    demo: "https://dms.licdn.com/playlist/vid/v2/D5605AQG2JNo5GvGz1w/mp4-720p-30fp-crf28/B56ZzBku8oJQCI-/0/1772774204167?e=1773633600&v=beta&t=wBzAm9EsVQRpUYqz2ECI-F-zb7mBum6oNOX9mEsnt14",
+    image: "/assets/Advanced-authentication.JPG",
   },
   {
     title: "Fast Pizza Co.",
@@ -42,7 +60,7 @@ export const projects = [
     tech: ["JavaScript", "CSS", "HTML"],
     github: "https://github.com/Taofique/Pixel-Art",
     demo: "https://pixel-art-q5d6.vercel.app/",
-    image: "/assets/pixel art.JPG", // Note the space in filename
+    image: "/assets/pixel art.JPG",
   },
   {
     title: "Lion's Bike Repair",
