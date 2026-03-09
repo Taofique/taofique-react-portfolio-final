@@ -18,6 +18,16 @@ export const projects = [
   },
 
   {
+    title: "PlantPal",
+    description:
+      "A full-stack plant discovery application. The React + TypeScript frontend allows users to browse, search, and view plant details. It connects to a dedicated Node.js/Express backend (Plantpal-backend) for data persistence and user authentication using JWT.",
+    tech: ["React", "TypeScript", "Node.js", "Express", "Tailwind CSS", "JWT"],
+    github: "https://github.com/Taofique/plantpal-frontend",
+    demo: "https://plantpal-frontend.vercel.app",
+    image: "/assets/plantPal.JPG",
+  },
+
+  {
     title: "Advanced Authentication MERN",
     description:
       "A full-stack authentication system built with the MERN stack. Features user registration and login with hashed passwords, two-factor authentication (2FA) via OTP, JWT-based session management, protected routes, and email-based password reset flow powered by Resend.",
@@ -34,15 +44,6 @@ export const projects = [
     github: "https://github.com/Taofique/fast-pizza",
     demo: "https://fast-pizza-gamma-sage.vercel.app",
     image: "/assets/fastPizza.JPG",
-  },
-  {
-    title: "PlantPal",
-    description:
-      "A full-stack plant discovery application. The React + TypeScript frontend allows users to browse, search, and view plant details. It connects to a dedicated Node.js/Express backend (Plantpal-backend) for data persistence and user authentication using JWT.",
-    tech: ["React", "TypeScript", "Node.js", "Express", "Tailwind CSS", "JWT"],
-    github: "https://github.com/Taofique/plantpal-frontend",
-    demo: "https://plantpal-frontend.vercel.app",
-    image: "/assets/plantPal.JPG",
   },
   {
     title: "Travel Guide",
